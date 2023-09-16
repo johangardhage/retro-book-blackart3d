@@ -1,8 +1,6 @@
-
 diamond 6 8
 
 ; vertex list
-
 
 0 25 0
 -20 0 20
@@ -10,7 +8,6 @@ diamond 6 8
 20 0 -20
 -20 0 -20
 0 -25 0
-
 
 ; polygon list
 
@@ -23,5 +20,3 @@ diamond 6 8
 0x106f  3 5 3 2
 0x106f  3 5 4 3
 0x106f  3 5 1 4
-
-

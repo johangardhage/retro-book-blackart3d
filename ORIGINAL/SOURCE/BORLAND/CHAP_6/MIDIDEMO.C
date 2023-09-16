@@ -189,5 +189,3 @@ if (loaded)
    Music_Unload((music_ptr)&song);
 
 } // end main
-
-

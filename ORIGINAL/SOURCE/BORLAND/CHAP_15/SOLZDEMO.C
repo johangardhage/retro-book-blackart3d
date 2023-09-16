@@ -332,7 +332,3 @@ printf("\nview angle x=%d, y=%d, z=%d",view_angle.ang_x,view_angle.ang_y,view_an
 printf("\nlight source x=%f, y=%f, z=%f",light_source.x,light_source.y,light_source.z);
 
 } // end main
-
-
-
-

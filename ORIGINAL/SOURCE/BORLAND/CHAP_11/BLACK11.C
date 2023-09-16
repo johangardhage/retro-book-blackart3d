@@ -3455,6 +3455,3 @@ fclose(fp);
 return(1);
 
 } // end Save_Palette_Disk
-
-
-

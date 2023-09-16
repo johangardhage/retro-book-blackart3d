@@ -4970,5 +4970,3 @@ Set_Graphics_Mode(TEXT_MODE);
 printf("\nKILL OR BE KILLED:Normal Shutdown.\n");
 
 } // end main
-
-

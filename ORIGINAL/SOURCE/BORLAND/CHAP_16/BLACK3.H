@@ -132,6 +132,3 @@ void Set_Mode_Z(void);
 
 extern unsigned char far *video_buffer;   // video ram byte ptr
 extern unsigned char far *rom_char_set;   // rom characters 8x8
-
-
-

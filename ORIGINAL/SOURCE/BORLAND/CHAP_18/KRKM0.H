@@ -508,5 +508,3 @@ extern char *tallon_specs[];
 // specifications for the slider
 
 extern char *slider_specs[];
-
-

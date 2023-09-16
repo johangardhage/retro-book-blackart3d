@@ -30,7 +30,3 @@ MIDPAK.COM.
 
 If you have trouble linking modem-2-modem with a friend, try editing the
 file BLAZE.MOD. It is the extra initialization string sent to the modem.
-
-
-
-

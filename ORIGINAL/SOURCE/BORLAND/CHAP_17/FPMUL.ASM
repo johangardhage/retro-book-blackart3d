@@ -29,9 +29,3 @@ ARG multiplier:DWORD, multiplicand:DWORD
 _FP_Mul ENDP
 
 END
-
-
-
-
-
-

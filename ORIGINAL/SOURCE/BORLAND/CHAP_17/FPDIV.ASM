@@ -36,9 +36,3 @@ ARG dividend:DWORD, divisor:DWORD
 _FP_Div ENDP
 
 END
-
-
-
-
-
-

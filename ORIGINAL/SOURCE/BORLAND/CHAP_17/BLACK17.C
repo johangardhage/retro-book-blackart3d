@@ -3121,6 +3121,3 @@ fquadcpy((void far *)(video_buffer+y*320),
 
 
 } // end Display_Double_Buffer_32
-
-
-

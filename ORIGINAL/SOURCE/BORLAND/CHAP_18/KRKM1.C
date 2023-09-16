@@ -3428,7 +3428,3 @@ for (index=0; index<NUM_STATIONS; index++)
     } // end for index
 
 } // end Load_3D_Models
-
-
-
-

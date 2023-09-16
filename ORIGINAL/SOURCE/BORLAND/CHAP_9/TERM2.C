@@ -237,5 +237,3 @@ Hang_Up();
 Serial_Close();
 
 } // end main
-
-

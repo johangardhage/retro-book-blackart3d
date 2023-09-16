@@ -318,6 +318,3 @@ int Joystick_Available(int joystick);
 // mouse stuff
 
 int Mouse_Control(int command, int *x, int *y,int *buttons);
-
-
-

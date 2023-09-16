@@ -46,5 +46,3 @@ extern long starting_time, // these are used to compute the length of some event
 long Timer_Query(void);
 
 void Timer_Program(int timer,unsigned int rate);
-
-

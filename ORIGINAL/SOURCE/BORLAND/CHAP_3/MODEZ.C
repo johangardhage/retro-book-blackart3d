@@ -50,5 +50,3 @@ for (index=320; index>=0; index--)
 Set_Graphics_Mode(TEXT_MODE);
 
 } // end main
-
-

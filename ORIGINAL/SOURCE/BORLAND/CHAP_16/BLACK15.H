@@ -106,5 +106,3 @@ extern unsigned int z_height_2;      // the height if half the z buffer
 extern unsigned int z_bank_size;     // size of a z buffer bank in bytes
 
 extern FILE *fp_out;  // general output file
-
-

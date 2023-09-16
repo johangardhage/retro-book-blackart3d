@@ -86,9 +86,3 @@ process_middle:
 _Triangle_16Line ENDP
 
 END
-
-
-
-
-
-

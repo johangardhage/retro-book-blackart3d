@@ -2364,6 +2364,3 @@ Set_Graphics_Mode(TEXT_MODE);
 printf("\nSTARBLAZER Shutdown Normal.\n");
 
 } // end main
-
-
-

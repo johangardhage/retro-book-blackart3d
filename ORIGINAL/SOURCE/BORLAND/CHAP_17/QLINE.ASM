@@ -183,9 +183,3 @@ process_middle:
 Triangle_32Line ENDP
 
 END
-
-
-
-
-
-

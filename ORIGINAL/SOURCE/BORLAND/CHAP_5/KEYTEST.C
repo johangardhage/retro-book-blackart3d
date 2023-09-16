@@ -137,6 +137,3 @@ if (PCX_Load("keypad.pcx", (pcx_picture_ptr)&image_pcx,1))
 Set_Graphics_Mode(TEXT_MODE);
 
 } // end main
-
-
-

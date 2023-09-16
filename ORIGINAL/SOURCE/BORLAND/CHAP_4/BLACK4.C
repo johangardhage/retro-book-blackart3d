@@ -1737,6 +1737,3 @@ else
    video_buffer = page_1_buffer;
 
 } // end Set_Working_Page_Mode_Z
-
-
-

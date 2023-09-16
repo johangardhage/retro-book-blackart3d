@@ -527,6 +527,3 @@ _asm   {
 	} // end inline asm
 
 } // end Set_Mode_Z
-
-
-

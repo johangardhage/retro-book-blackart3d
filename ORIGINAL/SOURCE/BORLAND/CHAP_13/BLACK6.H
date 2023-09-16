@@ -102,7 +102,3 @@ int Music_Play(music_ptr the_music,int sequence);
 void Music_Resume(void);
 
 int Music_Status(void);
-
-
-
-

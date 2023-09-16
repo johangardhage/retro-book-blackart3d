@@ -240,6 +240,3 @@ int Read_Pixel_DB(int x,int y);
 void Set_Working_Page_Mode_Z(int page);
 
 void Set_Visual_Page_Mode_Z(int page);
-
-
-

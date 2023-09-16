@@ -658,5 +658,3 @@ Modem_Control(MODEM_DTR_OFF);
 return(MODEM_OK);
 
 } // end Hang_Up
-
-

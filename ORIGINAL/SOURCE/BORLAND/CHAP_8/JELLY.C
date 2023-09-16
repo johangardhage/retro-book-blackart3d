@@ -169,5 +169,3 @@ _dos_setvect(TIME_KEEPER_INT,Old_Timer_ISR);
 Set_Graphics_Mode(TEXT_MODE);
 
 } // end main
-
-

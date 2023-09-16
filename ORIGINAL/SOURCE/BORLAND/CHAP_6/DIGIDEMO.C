@@ -268,5 +268,3 @@ for (number=0; number<=4; number++)
 printf("\nYou got %.0f percent of the problems correct.",100*num_correct/num_problems);
 
 } // end main
-
-

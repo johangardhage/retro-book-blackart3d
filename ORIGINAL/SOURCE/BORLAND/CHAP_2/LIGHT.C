@@ -213,5 +213,3 @@ while(!done)
 closegraph();
 
 } // end main
-
-

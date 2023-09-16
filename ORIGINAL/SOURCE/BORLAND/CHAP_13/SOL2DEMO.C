@@ -243,7 +243,3 @@ Set_Graphics_Mode(TEXT_MODE);
 Keyboard_Remove_Driver();
 
 } // end main
-
-
-
-

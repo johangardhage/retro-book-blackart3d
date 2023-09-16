@@ -143,5 +143,3 @@ while(!done)
 Set_Graphics_Mode(TEXT_MODE);
 
 } // end main
-
-

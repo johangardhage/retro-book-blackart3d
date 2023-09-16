@@ -143,8 +143,3 @@ int Wait_For_Connection(void);
 int Modem_Result(char *result,int exit_enable);
 
 int Hang_Up(void);
-
-
-
-
-

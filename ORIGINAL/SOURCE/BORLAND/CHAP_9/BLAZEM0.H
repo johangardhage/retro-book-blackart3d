@@ -687,5 +687,3 @@ extern RGB_color  primary_red,    // pure red
 // the instruction pages
 
 extern char *instructions[];
-
-

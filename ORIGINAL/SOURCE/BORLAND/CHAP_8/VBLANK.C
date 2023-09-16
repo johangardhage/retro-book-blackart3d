@@ -120,5 +120,3 @@ _dos_setvect(VERTICAL_BLANK_INTERRUPT,Old_Vertical);
 Set_Graphics_Mode(TEXT_MODE);
 
 } // end main
-
-

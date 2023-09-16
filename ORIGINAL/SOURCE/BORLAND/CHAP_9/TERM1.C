@@ -123,5 +123,3 @@ while(!done)
 Serial_Close();
 
 } // end main
-
-

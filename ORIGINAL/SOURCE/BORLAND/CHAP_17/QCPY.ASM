@@ -41,9 +41,3 @@ ret
 _fquadcpy ENDP
 
 END
-
-
-
-
-
-

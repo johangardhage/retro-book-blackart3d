@@ -3698,6 +3698,3 @@ for (curr_poly=0; curr_poly<the_object->num_polys; curr_poly++)
 } // end Draw_Object_Wire
 
 ///////////////////////////////////////////////////////////////////////////////
-
-
-

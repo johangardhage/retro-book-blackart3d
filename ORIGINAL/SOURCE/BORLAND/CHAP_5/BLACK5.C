@@ -633,5 +633,3 @@ switch(command)
       } // end switch
 
 } // end Mouse_Control
-
-

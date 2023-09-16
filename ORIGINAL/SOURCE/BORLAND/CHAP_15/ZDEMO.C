@@ -77,5 +77,3 @@ Set_Graphics_Mode(TEXT_MODE);
 Delete_Z_Buffer();
 
 } // end main
-
-

@@ -397,6 +397,3 @@ extern int poly_clip_min_x,
            poly_clip_max_y;
 
 extern sprite textures;              // this holds the textures
-
-
-

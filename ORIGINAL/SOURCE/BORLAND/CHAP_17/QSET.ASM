@@ -32,9 +32,3 @@ ret             ; return to caller
 _fquadset ENDP
 
 END
-
-
-
-
-
-

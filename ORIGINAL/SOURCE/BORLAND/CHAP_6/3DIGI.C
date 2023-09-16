@@ -219,7 +219,3 @@ Sound_Unload((_sound_ptr)&effect_l);
 Sound_Unload((_sound_ptr)&effect_r);
 
 } // end main
-
-
-
-

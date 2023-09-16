@@ -2253,6 +2253,3 @@ Intro_Title();
 Read_Palette(0,255,(RGB_palette_ptr)&game_palette);
 
 } // end Start_Up
-
-
-
