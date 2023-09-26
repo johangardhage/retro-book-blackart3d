@@ -1,0 +1,17 @@
+// Header file for chapter 8 - BLACK8.H
+
+// G L O B A L S /////////////////////////////////////////////////////////////
+
+unsigned long int starting_time,  // these are used to compute the length of some event
+ending_time;
+
+// F U N C T I O N S//////////////////////////////////////////////////////////
+
+unsigned long int Timer_Query(void)
+{
+	// this function is used to record the current time
+
+	return SDL_GetTicks64();
+}
+
+//////////////////////////////////////////////////////////////////////////////
