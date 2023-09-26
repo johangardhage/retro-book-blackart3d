@@ -11,9 +11,11 @@ rule cc
   description = Building executable $out
 
 build $builddir/gourdemo: cc $srcdir/gourdemo.c
+build $builddir/objects: cc $srcdir/objects.c
 build $builddir/sol2demo: cc $srcdir/sol2demo.c
 build $builddir/wiredemo: cc $srcdir/wiredemo.c
 
 build gourdemo: phony $builddir/gourdemo
+build objects: phony $builddir/objects
 build sol2demo: phony $builddir/sol2demo
 build wiredemo: phony $builddir/wiredemo
