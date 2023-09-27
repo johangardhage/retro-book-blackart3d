@@ -10,12 +10,20 @@ rule cc
 #  command = $cc $in $windows -o $out.
   description = Building executable $out
 
+build $builddir/bspdemo: cc $srcdir/bspdemo.c
 build $builddir/gourdemo: cc $srcdir/gourdemo.c
 build $builddir/objects: cc $srcdir/objects.c
 build $builddir/sol2demo: cc $srcdir/sol2demo.c
+build $builddir/solzdemo: cc $srcdir/solzdemo.c
+build $builddir/sortdemo: cc $srcdir/sortdemo.c
 build $builddir/wiredemo: cc $srcdir/wiredemo.c
+build $builddir/zdemo: cc $srcdir/zdemo.c
 
+build bspdemo: phony $builddir/bspdemo
 build gourdemo: phony $builddir/gourdemo
 build objects: phony $builddir/objects
 build sol2demo: phony $builddir/sol2demo
+build solzdemo: phony $builddir/solzdemo
+build sortdemo: phony $builddir/sortdemo
 build wiredemo: phony $builddir/wiredemo
+build zdemo: phony $builddir/zdemo
