@@ -432,6 +432,12 @@ void Draw_Poly_List_Z(void)
 			continue;
 #endif
 
+		// perform z clipping
+		if (z1 < clip_near_z) z1 = clip_near_z;
+		if (z2 < clip_near_z) z2 = clip_near_z;
+		if (z3 < clip_near_z) z3 = clip_near_z;
+		if (z4 < clip_near_z) z4 = clip_near_z;
+
 		// extract points of polygon
 		x1 = world_polys[curr_poly]->vertex_list[0].x;
 		y1 = world_polys[curr_poly]->vertex_list[0].y;

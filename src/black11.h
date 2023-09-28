@@ -131,7 +131,7 @@ typedef struct object_typ
 
 // G L O B A L S //////////////////////////////////////////////////////////////
 
-float  clip_near_z = 100,        // the near or hither clipping plane
+float  clip_near_z = 1,        // the near or hither clipping plane
 clip_far_z = 3000,       // the far or yon clipping plane
 screen_width = 320,        // dimensions of the screen
 screen_heigth = 200;
@@ -2351,6 +2351,12 @@ void Draw_Object_Solid(object_ptr the_object)
 			continue;
 #endif
 
+		// perform z clipping
+		if (z1 < clip_near_z) z1 = clip_near_z;
+		if (z2 < clip_near_z) z2 = clip_near_z;
+		if (z3 < clip_near_z) z3 = clip_near_z;
+		if (z4 < clip_near_z) z4 = clip_near_z;
+
 		// extract points of polygon
 		x1 = the_object->vertices_camera[vertex_1].x;
 		y1 = the_object->vertices_camera[vertex_1].y;
@@ -2432,6 +2438,12 @@ void Draw_Poly_List(void)
 			(z1 > clip_far_z && z2 > clip_far_z && z3 > clip_far_z && z4 > clip_far_z))
 			continue;
 #endif
+
+		// perform z clipping
+		if (z1 < clip_near_z) z1 = clip_near_z;
+		if (z2 < clip_near_z) z2 = clip_near_z;
+		if (z3 < clip_near_z) z3 = clip_near_z;
+		if (z4 < clip_near_z) z4 = clip_near_z;
 
 		// extract points of polygon
 		x1 = world_polys[curr_poly]->vertex_list[0].x;
