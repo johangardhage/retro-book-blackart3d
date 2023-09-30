@@ -10,6 +10,7 @@ rule cc
 #  command = $cc $in $windows -o $out.
   description = Building executable $out
 
+build $builddir/blaze3d: cc $srcdir/blaze3d.c
 build $builddir/bspdemo: cc $srcdir/bspdemo.c
 build $builddir/gourdemo: cc $srcdir/gourdemo.c
 build $builddir/objects: cc $srcdir/objects.c
@@ -20,6 +21,7 @@ build $builddir/voxel: cc $srcdir/voxel.c
 build $builddir/wiredemo: cc $srcdir/wiredemo.c
 build $builddir/zdemo: cc $srcdir/zdemo.c
 
+build blaze3d: phony $builddir/blaze3d
 build bspdemo: phony $builddir/bspdemo
 build gourdemo: phony $builddir/gourdemo
 build objects: phony $builddir/objects
