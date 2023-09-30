@@ -16,6 +16,7 @@ build $builddir/objects: cc $srcdir/objects.c
 build $builddir/sol2demo: cc $srcdir/sol2demo.c
 build $builddir/solzdemo: cc $srcdir/solzdemo.c
 build $builddir/sortdemo: cc $srcdir/sortdemo.c
+build $builddir/voxel: cc $srcdir/voxel.c
 build $builddir/wiredemo: cc $srcdir/wiredemo.c
 build $builddir/zdemo: cc $srcdir/zdemo.c
 
@@ -25,5 +26,6 @@ build objects: phony $builddir/objects
 build sol2demo: phony $builddir/sol2demo
 build solzdemo: phony $builddir/solzdemo
 build sortdemo: phony $builddir/sortdemo
+build voxel: phony $builddir/voxel
 build wiredemo: phony $builddir/wiredemo
 build zdemo: phony $builddir/zdemo
