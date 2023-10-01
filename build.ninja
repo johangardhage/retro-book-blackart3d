@@ -13,6 +13,7 @@ rule cc
 build $builddir/blaze3d: cc $srcdir/blaze3d.c
 build $builddir/bspdemo: cc $srcdir/bspdemo.c
 build $builddir/gourdemo: cc $srcdir/gourdemo.c
+build $builddir/krk: cc $srcdir/krk.c
 build $builddir/objects: cc $srcdir/objects.c
 build $builddir/sol2demo: cc $srcdir/sol2demo.c
 build $builddir/solzdemo: cc $srcdir/solzdemo.c
@@ -24,6 +25,7 @@ build $builddir/zdemo: cc $srcdir/zdemo.c
 build blaze3d: phony $builddir/blaze3d
 build bspdemo: phony $builddir/bspdemo
 build gourdemo: phony $builddir/gourdemo
+build krk: phony $builddir/krk
 build objects: phony $builddir/objects
 build sol2demo: phony $builddir/sol2demo
 build solzdemo: phony $builddir/solzdemo
