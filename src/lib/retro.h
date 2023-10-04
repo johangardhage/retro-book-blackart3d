@@ -42,19 +42,27 @@ void __attribute__((weak)) RETRO_Deinitialize_3D(void);
 
 #define RETRO_MAX_IMAGES 10
 
+#define RETRO_SINCOS_ANGLE 256
+
 #define RAD2DEG (M_PI / 180)
-#define RANDOM(n) (((float)rand() / (float)RAND_MAX) * (n))
+#define DEG2RAD (180 / M_PI)
+#define RAND ((float)rand() / RAND_MAX)
+#define RANDOM(n) ((int)(RAND * (n)))
+#define RANDOMF(n) ((float)(RAND * (n)))
+#define COS(x) cos(((x) * 2.0 * M_PI) / RETRO_SINCOS_ANGLE)
+#define SIN(x) sin(((x) * 2.0 * M_PI) / RETRO_SINCOS_ANGLE)
 #define CLAMP(n, l, h) ((n) < (l) ? (l) : ((n) > ((h) - 1) ? ((h) - 1) : (int)(n)))
 #define CLAMP64(n) ((n) < 0 ? 0 : ((n) > 63 ? 63 : (int)(n)))
 #define CLAMP128(n) ((n) < 0 ? 0 : ((n) > 127 ? 127 : (int)(n)))
 #define CLAMP256(n) ((n) < 0 ? 0 : ((n) > 255 ? 255 : (int)(n)))
 #define CLAMPWIDTH(n) ((n) < 0 ? 0 : ((n) > RETRO_WIDTH - 1 ? RETRO_WIDTH - 1 : (int)(n)))
 #define CLAMPHEIGHT(n) ((n) < 0 ? 0 : ((n) > RETRO_HEIGHT - 1 ? RETRO_HEIGHT - 1 : (int)(n)))
-#define WRAP(n, h) ((int)(n) % (h))
-#define WRAP128(n) ((int)(n) & 127)
-#define WRAP256(n) ((int)(n) & 255)
-#define WRAPWIDTH(n) ((int)(n) % RETRO_WIDTH)
-#define WRAPHEIGHT(n) ((int)(n) % RETRO_HEIGHT)
+#define WRAP(n, h) ((unsigned int)(n) % (h))
+#define WRAP64(n) ((unsigned int)(n) & 63)
+#define WRAP128(n) ((unsigned int)(n) & 127)
+#define WRAP256(n) ((unsigned int)(n) & 255)
+#define WRAPWIDTH(n) ((unsigned int)(n) % RETRO_WIDTH)
+#define WRAPHEIGHT(n) ((unsigned int)(n) % RETRO_HEIGHT)
 #define SWAP(x, y) do { typeof(x) _SWAP = x; x = y; y = _SWAP; } while (0)
 #define MIN(a,b) ({ __typeof__ (a) _a = (a); __typeof__ (b) _b = (b); _a < _b ? _a : _b; })
 #define MAX(a,b) ({ __typeof__ (a) _a = (a); __typeof__ (b) _b = (b); _a > _b ? _a : _b; })
@@ -353,6 +361,9 @@ void RETRO_Initialize(void)
 	for (int y = 0; y < RETRO_HEIGHT; y++) {
 		RETRO.yoffset[y] = y * RETRO_WIDTH;
 	}
+
+	// Initialize random number generator
+	srand(time(NULL));
 
 	if (RETRO_Initialize_3D != NULL) RETRO_Initialize_3D();
 }
